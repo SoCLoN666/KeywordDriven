@@ -3,7 +3,7 @@ import { ActionOperator } from "e2e/keyword-operators/action-keyword-operator";
 import { AssertOperator } from "e2e/keyword-operators/assert-keyword-operator";
 import { SidebarIds } from "e2e/selectors/sidebar";
 
-test.describe.only("sidebar  tests", () => {
+test.describe("sidebar  tests", () => {
   test("expanded sidebar is default state", async ({ page }) => {
     ActionOperator.setPage(page);
     AssertOperator.setPage(page);
@@ -33,7 +33,7 @@ test.describe.only("sidebar  tests", () => {
     await AssertOperator.element(collapsedSidebarToggle).toBeVisible();
   });
 
-  test.only("user should be able to expand collapsed sidebar", async ({ page }) => {
+  test("user should be able to expand collapsed sidebar", async ({ page }) => {
     ActionOperator.setPage(page);
     AssertOperator.setPage(page);
 
