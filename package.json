@@ -1,0 +1,13 @@
+{
+  "name": "keyword-driven-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.2.0"
+  },
+  "scripts": {
+    "test:e2e": "npx playwright test"
+  }
+}
